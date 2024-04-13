@@ -1,0 +1,1 @@
+Dart is an object-oriented language. It supports object-oriented programming features like [classes](https://www.tutorialspoint.com/dart_programming/dart_programming_classes.htm), interfaces, etc. A class in terms of OOP is a blueprint for creating objects. A class encapsulates data for the object. Dart gives built-in support for this concept called class.
