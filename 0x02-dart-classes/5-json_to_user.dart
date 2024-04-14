@@ -1,18 +1,19 @@
 class User {
+    int id;
     String name;
     int age;
     double height;
-    int id;
+    
 
     // initialize class fields
     User({required this.id, required this.name, required this.age, required this.height});
 
     Map toJson() {
         Map data = {
+            'id': id,
             'name': name,
             'age': age,
-            'height': height,
-            'id': id
+            'height': height
         };
         return data;
     }
