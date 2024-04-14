@@ -5,7 +5,7 @@ class User {
     int id;
 
     // initialize class fields
-    User({required this.name, required this.age, required this.height, required this.id});
+    User({required this.id, required this.name, required this.age, required this.height});
 
     Map toJson() {
         Map data = {
