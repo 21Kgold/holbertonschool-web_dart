@@ -5,7 +5,7 @@ class User extends Password {
     String name;
     int age;
     double height;
-    late String? user_password;
+    String? user_password;
     
 
     // initialize class fields
