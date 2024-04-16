@@ -5,14 +5,24 @@ class User extends Password {
     String name;
     int age;
     double height;
-    String? user_password;
+    String? _user_password;
     
 
     // initialize class fields
-    User({required this.id, required this.name, required this.age, required this.height, required this.user_password}) :
+    User({required this.id, required this.name, required this.age, required this.height, required String user_password}) :
         super(password: user_password) {
-            this.user_password = user_password;
+            this._user_password = user_password;
         }
+
+    // Override the setter for user_password to also update _password
+    String get user_password {
+        return _user_password!;
+    }
+
+    void set user_password(String user_password) {
+        _user_password = user_password;
+        this.password = user_password;
+    }
 
     Map toJson() {
         Map data = {
