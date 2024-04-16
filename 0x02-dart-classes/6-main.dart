@@ -2,7 +2,7 @@ import '6-inheritance.dart';
 
 void main() {
   final djo = User(
-      id: 1, name: "Djo", age: 25, height: 1.89, user_password: "Azert23defde");
+      id: 1, name: "Djo", age: 25, height: 1.89, user_password: "Azert23defd1");
   print('<===========Json=========>:');
   print('\n');
   print(djo.toJson());
@@ -11,7 +11,7 @@ void main() {
     'name': 'Youssef',
     'age': 26,
     'height': 1.9,
-    'user_password': "Azert23defde"
+    'user_password': "Azert23defd2"
   };
   final youssef = User.fromJson(map);
   print('\n');
@@ -22,8 +22,8 @@ void main() {
   print('\n');
   print('<===========Test2===========>:');
   print('\n');
-  djo.user_password = "holberton98";
-  youssef.user_password = "AZERfghn6789";
+  djo.password = "holberton98";
+  youssef.user_password = "TERfgghn6789";
   print(djo.toString());
   print(youssef.toString());
 }
